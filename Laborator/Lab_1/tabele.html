@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tabele </title>
+	<meta charset = "UTF-8">
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<style>
+		th,td{
+            border:1px solid black;
+            padding:5px;
+        }
+        table#t01{
+            border-collapse:collapse;
+            empty-cells:show;
+        }
+		table#t02{
+			border-collapse:collapse;
+			empty-cells:show;
+		}
+		#t02 td {
+			padding:20px;
+		}
+		
+    </style>
+</head>
+
+<body>
+	<header>
+		<h1> Tabele </h1>
+	</header>
+	<main>
+		
+		<!-- Primul tabel -->
+		
+		<caption> Notele studentilor din echipele 1 si 2 </caption>
+		<table id="t01">
+			<thead>
+				<tr>
+					<th rowspan="2"> Echipa		</th>
+					<th colspan="2"> Student	</th>
+					<th rowspan="2" colspan="3"> Nota/bonus </th>
+				</tr>
+				<tr>
+					<th> Nume </th>
+					<th> Prenume </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="2"> 1 </td>
+					<td> Ionescu </td>
+					<td> George </td>
+					<td> 10 </td>
+					<td colspan="2"> + </td>
+				</tr>
+				<tr>
+					<td> Ionescu </td>
+					<td> George </td>
+					<td> 10 </td>
+					<td> + </td>
+					<td> + </td>
+				</tr>
+				<tr>
+					<td rowspan="3"> 2 </td>
+					<td> Teodor </td>
+					<td> Teo </td>
+					<td colspan="3"> 10 </td>
+				</tr>
+				<tr>
+					<td> Gogu </td>
+					<td> Gogu </td>
+					<td> 10 </td>
+					<td> + </td>
+					<td> + </td>
+				</tr>
+				<tr>
+					<td> Tache </td>
+					<td> Bob </td>
+					<td> 10 </td>
+					<td colspan="2" > + </td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="6"> Concluzie: 2 echipe (5 studenti)  </td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<!-- Al 2-lea tabel -->
+		<br>
+		<table id="t02">
+			<tr> 
+				<td colspan="2"> </td>
+				<td colspan="2"> </td>
+				<td colspan="2"> </td>
+				<td colspan="2" rowspan="2"> </td>
+			</tr>
+			<tr> 
+				<td colspan="3"> </td>
+				<td colspan="3" rowspan="2"> </td>
+			</tr>
+			<tr>
+				<td colspan="3"> </td>
+				<td colspan="2"> </td>
+			</tr>
+		</table>
+		<br>
+		<math>
+			<mfrac>
+				<msup>
+					<mfenced>
+						<mrow>
+							<mn>1</mn>
+							<mo>+</mo>
+							<mn>2</mn>
+						</mrow>
+					</mfenced>
+					<mn>4</mn>
+				</msup>
+				<mn>3</mn>
+			</mfrac>
+		</math>
+		
+		<br>
+		<p>HTML: &#8707; x &#8712; A </p>
+		<p>mathML: 
+			<mrow>
+				<mo>&#x2203;<!--THERE EXISTS--></mo>
+				<mi>x</mi>
+				<mo>&#x2208;<!--ELEMENT OF--></mo>
+				<mi>A</mi>
+			</mrow>
+		</p>
+		
+		<br>
+		<dl>
+			<dt>&#8707;</dt>
+			<dd>There exists</dd>
+			<dt>&#8712;</dt>
+			<dd>Element of</dd>
+		</dl>
+		
+		<br>
+		<svg width="200" height="200">
+			<circle cx="100" cy="100" r="30" stroke="black" stroke-width="5" fill="red" >
+				<animate attributeName="r" from="30" to="100" dur="2s" repeatCount="3" />
+			</circle>
+		</svg>
+	</main>
+	<footer>
+	</footer>
+</body>
+
+</html>

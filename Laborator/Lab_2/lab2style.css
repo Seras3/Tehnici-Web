@@ -1,0 +1,140 @@
+#p1{                                /* id-ul suprascrie clasa */
+    color: orange;
+    font-weight: bold;
+    text-decoration: underline overline;
+    
+}
+
+p{
+    color: green;
+    font-family: "Comic Sans MS";
+}                
+
+h1{
+    text-decoration: underline;
+    color: red;
+}
+
+h3 + p{
+    border: 2px dotted blue;
+    color: fuchsia;
+}
+
+h3 ~ p{
+    color:  rgb(0, 95, 76);
+    background-image: url('http://irinaciocan.ro/tehnici_web/imagini/backgr_pas3.png');
+    background-attachment: fixed;
+}
+
+.c1{
+    background-color: purple;        /* modificarile se fac doar in interiorul tagului */
+}
+
+.c2{
+    font-style: italic;
+    background-color: yellow;
+    text-decoration: line-through;
+}
+
+
+h3.c3{
+    background-color: orange;       
+    text-transform: uppercase;
+}
+
+.c3{
+    font-variant: small-caps;       /* nu suprascrie h3.c3 */
+    background-color: lime;
+    text-decoration: overline;
+}
+
+/* daca un tag foloseste 2 clase care au aceleasi referinte, ultimul suprascrie pe primul */
+
+.c2.c3{
+    color: rgb(220, 20, 60);
+    font-style: normal;
+}
+
+section#abc p{
+    box-shadow: 5px 10px red;
+}
+
+section#abc > p{
+    box-shadow: 5px 10px green;
+    text-shadow: 2px 2px red;
+}
+
+ol{
+    list-style: upper-roman;
+}
+
+ol > li{
+    border: 4px ridge purple;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+p[title]::first-letter{
+    font-size: 20px;
+}
+
+p[title="altceva"]:hover{
+    background-color: pink;
+}
+
+p[title="altceva"]:hover + *{
+    visibility: hidden;
+}
+
+section p{
+    padding-left: 25px;
+}
+
+section p:first-of-type{
+    padding-left: 0px;
+}
+
+li:nth-child(even){
+    text-align: right;
+}
+
+body > section:first-of-type{
+    border-top:4px dashed green;
+    border-left:4px dashed green;
+}
+
+section :first-child::after{
+    content: "primul";
+}
+
+h1::before{
+    content: url('http://irinaciocan.ro/imagini/foarte_zambaret.png');
+}
+
+h2::before{
+    content: url('http://irinaciocan.ro/imagini/foarte_zambaret.png');
+}
+
+h3::before{
+    content: url('http://irinaciocan.ro/imagini/foarte_zambaret.png');
+}
+
+p:not([class]), p:not([id]){
+    cursor: crosshair;
+}
+
+*{
+    outline-style: dashed;
+    outline-width: 2px;
+    outline-color: blue;
+}
+
+section#abc:hover p{
+    word-spacing: 20px;
+}
+
+section#abc:hover p[title] + p{
+    word-spacing: normal;
+}
+
+

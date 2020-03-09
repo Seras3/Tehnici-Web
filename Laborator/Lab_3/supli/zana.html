@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zana</title>
+    <style>
+        table{
+            width: 400px;
+            height: 150px;
+            border-spacing: 10px;
+        }
+        
+        td{
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        
+        td:first-child{
+            border: 1px dotted blue;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("star.png");
+        }
+        
+        
+        td:last-child{
+            border: 1px solid black;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("cake.png");
+            
+        }
+        
+        td:first-child:focus ~ :not(:last-child){
+            border-right: 2px solid brown;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("key.png");
+        }
+        
+        td:nth-child(2):focus ~ :not(:last-child){
+            border-right: 2px solid brown;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("key.png");
+        }
+        
+        td:nth-child(3):focus ~ :not(:last-child){
+            border-right: 2px solid brown;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("key.png");
+        }
+        
+        td:nth-child(4):focus ~ :not(:last-child){
+            border-right: 2px solid brown;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("key.png");
+        }
+        
+        td:last-child:focus{
+            border: 0px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("yum.png");
+        }
+        
+        td:focus{
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("fairy.gif");
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td tabindex="0"></td>
+            <td tabindex="1"></td>
+            <td tabindex="2"></td>
+            <td tabindex="3"></td>
+            <td tabindex="4"></td>
+        </tr>
+    </table>
+</body>
+</html>

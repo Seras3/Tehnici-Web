@@ -1,0 +1,195 @@
+
+	img {
+        border-radius: 50%;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+    }
+    .flex-container{
+        display: flex;
+        height: 100%;
+        font-family: 'Roboto';
+        
+    }
+        
+    .col1{
+        background-color: #2A466E;
+        flex-direction: column;
+        flex-grow: 1;
+        max-width: 400px;
+        color: white;
+    }
+        
+    .content1{
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 100%;
+    }
+        
+    .border-line{
+        background: linear-gradient(to right, #2A466E, #002250);
+        flex-grow: 0.15;
+    }
+        
+    .col2{
+        background-color: #02050d;
+        flex-direction: column;
+        flex-grow: 5;
+    }
+    
+    body{
+        margin: 0;
+    }
+    
+    .name {
+        font-size: 25px;
+        text-align: center;
+    }
+        
+    .actual-profession{
+        padding-top: 5px;
+        padding-bottom: 20px;
+        font-size: 15px;
+        text-align: center;
+        opacity: 50%;
+        font-family: "Roboto Light";
+    }
+    
+    .info-box{
+        border: 1px solid white;
+        border-radius: 25px;
+        padding: 15px;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .ability-panel{
+        margin-top: 50px;
+    }
+    
+    .ability-head{
+        font-size: 27px;
+        padding-left: 15px;
+    }
+        
+    .ability-list-1 > li{
+        list-style: none;
+        font-size: 18px;
+        padding: 10px;
+        margin: 5px;
+        display: inline-flex;
+        border-right: 2px solid white;
+        border-radius: 20px;
+        border-left: 1px solid white;
+    }
+    
+    .ability-list-2 > li{
+        list-style: none;
+        font-size: 18px;
+        padding: 10px;
+        margin: 3px;
+        display: inline-flex;
+        border-right: 2px solid white;
+        border-radius: 20px;
+        border-left: 1px solid white;
+    }
+        
+    .ability-list-3 > li{
+        font-size: 18px;
+        margin: 3px;
+        display: inline-flex;
+        
+    }
+    
+    .ability-list-3 > li:before{
+        content: "|";
+        padding-right: 8px;
+    }
+        
+    ul{
+        margin-top: 30px;
+        padding-inline-start: 5px;
+        font-family: "Roboto Light";
+    }
+    
+    .grid-container-c1{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 5px;
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    .grid-container-c2{
+        display: grid;
+        grid-template-columns: 400px auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 5px;
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    
+    .grid-title{
+        font-size: 20px;
+        font-family: "Roboto";
+    }
+    
+    .grid-an{
+        padding: 5px; 
+        font-size: 20px;
+        font-family: "Roboto";
+    }
+
+    .grid-description{
+        font-size: 15px;
+        font-family: "Roboto Light";
+    }
+    
+    .chapter{
+        margin: 40px;
+    }
+    
+    .chapter-title{
+        font-size: 30px;
+        color: #4577bf;
+        font-family: "Roboto Medium";
+    }
+    
+    .chapter-content{
+        color: #5579ad;
+        margin-top: 20px;
+        max-width: 800px;
+        font-family: "Roboto Light";
+        font-size: 20px;
+    }
+    
+    .chapter-box{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .chapter-box-title{
+        font-size: 20px;
+        font-family: "Roboto";
+        margin-top: 10px;
+    }
+    
+    .chapter-box-grid{
+        display: grid;
+        grid-template-columns: 300px auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 5px;
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 18px;
+        font-family: "Roboto Light";
+    }
+    
