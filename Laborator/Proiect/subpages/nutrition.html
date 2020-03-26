@@ -18,14 +18,37 @@
 <body>
     <header>
         <a class="logo">Adam Adrian.</a>
-        <nav>
+        <nav class="sidenav">
+            <div class="nav-mobile" onclick="menuState(this)">
+              <div class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+            <a href="../index.html"> Home </a>
+            <div class="dropdown" onclick="selectDiv(this)"> My Formal 
+                <div class="dropdown-content"> 
+                    <a href="../subpages/cv.html">Resume</a>
+                </div>
+            </div>
+            <div class="dropdown" onclick="selectDiv(this)"> Hobbies 
+                <div class="dropdown-content"> 
+                    <a href="../subpages/nutrition.html">Nutrition</a>
+                    <a href="../subpages/sport.html">Sport</a>
+                    <a href="../subpages/programming.html">Programming</a>
+                </div>
+            </div>
+            <a href="../subpages/shop.html">Shop</a>
+        </nav> 
+        <nav class="largeScreen">
             <a href="../index.html"> Home </a>
             <div class="dropdown"> My Formal 
                 <div class="dropdown-content"> 
                     <a href="../subpages/cv.html">Resume</a>
                 </div>
             </div>
-            <div class="dropdown"> Hobbies 
+            <div class="dropdown hobbies-width"> Hobbies 
                 <div class="dropdown-content"> 
                     <a href="../subpages/nutrition.html">Nutrition</a>
                     <a href="../subpages/sport.html">Sport</a>
@@ -40,14 +63,14 @@
         <div class="content-paper">
             <div class="article-body"> 
                 <section class="article-content">
-                    <h2>Welcome into nutrition!</h2>
-                    <img class="blog-img" src="../images/nutrition-intro-1.jpg" alt="fruits"> 
+                    <h2>Welcome into nutrition!</h2> 
                     <p>First of all, I am really glad you came to this page. Congratulations! This means that you are interested in your health condition. I prepared for you some articles that represents a sum of informations that I achieved after more than 3 years of practicing workouts.</p>
+                    <img class="blog-img" src="../images/nutrition-intro-1.jpg" alt="fruits">
                     <p>Maybe you're asking:<span id="blue"> " Do I have to go outside and train my muscles too ? "</span></p>
                     <p>The answer is :<span class="red"> NO.</span></p>
                     <p>It's not a must. Nutrition is the most important part of a regular training routine, but that doesn't mean that you can't take care of yourself in particular ways. Simply the idea of knowing what are you eating is a problem solver. </p>
                     <p>You will have the answers for questions like:</p>
-                    <ul style="list-style: none; font-size: 1.2em; text-indent: 3em;">
+                    <ul style="list-style: none; font-size: 1.2em; text-indent: 5%;">
                         <li>Why can't I fall asleep?</li>
                         <li>Why am I feeling so low?</li>
                         <li>Why I gain fat even if I do my workouts?</li>
@@ -71,12 +94,13 @@
     <footer>
         <div class="social-media">
             <a class="fa fa-facebook" href="https://www.facebook.com/adrian.adam.161" target="_blank"></a>
-            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/adam-a-a59b85133" target="_blank"></a>
+            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/adrian-claudiu-a-a59b85133/" target="_blank"></a>
             <a class="fa fa-instagram" href="https://www.instagram.com/adrian.adam.c/" target="_blank"></a>
         </div>
         <div class="copy-right">
             Copyright © 2020 Adam Adrian-Claudiu
         </div>
     </footer>
+    <script src="../scripts/main-script.js"></script>
 </body>
 </html>

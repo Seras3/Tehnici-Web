@@ -1,0 +1,94 @@
+main > h1 {
+  background-color: var(--bg-content-opacity);
+  border-radius: 20px;
+}
+
+.highlight {
+  color: rgb(4, 220, 226);
+}
+
+table {
+  font-family: "Roboto";
+  border-spacing: 1vw 2vw;
+  border-style: solid;
+  border-radius: 40px;
+  border-width: 1px;
+  border-color: white;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  min-width: 500px;
+}
+
+table caption {
+  font-size: 1.3rem;
+  padding-bottom: 2%;
+}
+
+table th {
+  font-size: 1.5rem;
+}
+
+tbody td {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+tbody td::before {
+  content: "✔️ ";
+}
+
+tfoot {
+  font-size: 1.2rem;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 5%;
+  grid-column-gap: 5%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.gallery-item {
+  position: relative;
+  display: inline-block;
+  padding-left: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  max-height: 90%;
+  transition: 1s;
+}
+
+
+.gallery-item img:hover {
+  transition: 1s;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+}
+
+
+@media only screen and (max-width: 950px) {
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .gallery-item {
+    width: 100%;
+  }
+}

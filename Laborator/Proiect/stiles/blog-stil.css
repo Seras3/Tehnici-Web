@@ -1,78 +1,89 @@
-:root{
-    --nutrition-bg-img: url(../images/cover-nutrition.jpg);
-    --sport-bg-img: url(../images/cover-sport.jpg);
-    --programming-bg-img: url(../images/cover-programming.jpg);
-    --nutrition-nav-title-color: #5cd65c;
-    --sport-nav-title-color: #b37517;
-    --programming-nav-title-color: #b317ae;
+:root {
+  --nutrition-bg-img: url(../images/cover-nutrition.jpg);
+  --sport-bg-img: url(../images/cover-sport.jpg);
+  --programming-bg-img: url(../images/cover-programming.jpg);
+  --shop-bg-img: url(../images/cover-shop.jpg);
+  --nutrition-nav-title-color: #5cd65c;
+  --sport-nav-title-color: #b37517;
+  --programming-nav-title-color: #b317ae;
+  --shop-nav-title-color: rgb(4, 220, 226);
+  
 }
 
-.main-blog{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto";
-    color: white;
-    background-size: cover;
-    background-attachment: fixed;
-    
+.main-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;  
 }
 
-.main-blog h1{
-    margin: 2em;
-    margin-top: 3em;
-    font-size: 3rem;
+.main-blog h1 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  font-size: 3rem;
 }
 
-.main-bg-nutrition{
-    background-image: var(--nutrition-bg-img);
+.main-bg-nutrition {
+  background-image: var(--nutrition-bg-img);
 }
 
-.main-bg-sport{
-    background-image: var(--sport-bg-img);
+.main-bg-sport {
+  background-image: var(--sport-bg-img);
 }
 
-.main-bg-programming{
-    background-image: var(--programming-bg-img);
+.main-bg-programming {
+  background-image: var(--programming-bg-img);
 }
 
-.content-paper{
-    display: flex;
-    flex-grow: 1;
-    width: 80%;
-    background-color: var(--head-color);
-    opacity: 0.9;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
-    z-index: 0;
+.main-bg-shop {
+  background-image: var(--shop-bg-img);
+}
+
+.content-paper {
+  display: flex;
+  flex-grow: 1;
+  width: 90%;
+  background-color: var(--bg-content-opacity);
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  z-index: 0;
 }
 
 
-.nav-articles{
-    display: flex;
-    flex-direction: column;
-    margin-right: 0px;
-    text-align: left;
-    flex-basis: 15%;
-    flex-shrink: 0;
-    position: relative;
-    border-left: 0.4em;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-style: solid;
+.nav-articles {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0px;
+  text-align: left;
+  flex-basis: 15%;
+  flex-shrink: 0;
+  position: relative;
+  border-left: 0.4em;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-style: solid;
 }
 
-.nav-border-color-nutrition{
-    border-color: var(--nutrition-nav-title-color);
+.nav-border-color-nutrition {
+  border-color: var(--nutrition-nav-title-color);
 }
 
-.nav-border-color-sport{
-    border-color: var(--sport-nav-title-color);
+.nav-border-color-sport {
+  border-color: var(--sport-nav-title-color);
 }
-.nav-border-color-programming{
-    border-color: var(--programming-nav-title-color);
+
+.nav-border-color-programming {
+  border-color: var(--programming-nav-title-color);
+}
+
+.nav-border-color-shop {
+  border-color: var(--shop-nav-title-color);
 }
 
 
@@ -97,6 +108,17 @@
 .nav-articles-title-programming{
     background-color: var(--programming-nav-title-color);
     border-top-right-radius: 2em;
+}
+
+.nav-articles-title-shop{
+    background-color: var(--shop-nav-title-color);
+    border-top-right-radius: 2em;
+    color: black;
+    font-weight: 600;
+}
+
+.programming-color {
+    color: var(--programming-nav-title-color);
 }
 
 
@@ -146,11 +168,13 @@
 }
 
 .article-body{
-    flex-grow: 1;
+  flex-grow: 1;
+   overflow-x: auto;
 }
 
 .article-content{
-    padding: 2em;
+  padding: 5%;
+  padding-top: 3%;
 }
 
 .article-content p{
@@ -165,8 +189,9 @@
 .blog-img{
     float: right; 
     width: 40%; 
-    margin-left: 2em; 
-    margin-bottom: 2em;
+    margin-left: 5%; 
+    margin-bottom: 5%;
+    min-width: 20rem;
 }
 
 .red{
@@ -175,4 +200,25 @@
 
 #blue{
     color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-articles {
+    display: none;
+  }
+    
+  .main-blog h1 {
+    margin-top: 5rem; 
+    font-size: 2.5rem;
+    text-align: center;    
+  }
+    
+  .blog-img {
+    width: 100%;
+    min-width: 10rem;
+  }
+  
+  .article-content {
+    padding-top: 5%;
+  }
 }

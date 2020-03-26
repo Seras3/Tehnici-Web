@@ -10,6 +10,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="icon" type="image/png" href="../ico/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="../stiles/main-stil.css">
+    <link rel="stylesheet" type="text/css" href="../stiles/blog-stil.css">
+    <link rel="stylesheet" type="text/css" href="../stiles/shop-stil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     
@@ -17,14 +19,37 @@
 <body>
     <header>
         <a class="logo">Adam Adrian.</a>
-        <nav>
+        <nav class="sidenav">
+            <div class="nav-mobile" onclick="menuState(this)">
+              <div class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+            <a href="../index.html"> Home </a>
+            <div class="dropdown" onclick="selectDiv(this)"> My Formal 
+                <div class="dropdown-content"> 
+                    <a href="../subpages/cv.html">Resume</a>
+                </div>
+            </div>
+            <div class="dropdown" onclick="selectDiv(this)"> Hobbies 
+                <div class="dropdown-content"> 
+                    <a href="../subpages/nutrition.html">Nutrition</a>
+                    <a href="../subpages/sport.html">Sport</a>
+                    <a href="../subpages/programming.html">Programming</a>
+                </div>
+            </div>
+            <a href="../subpages/shop.html">Shop</a>
+        </nav>   
+        <nav class="largeScreen">
             <a href="../index.html"> Home </a>
             <div class="dropdown"> My Formal 
                 <div class="dropdown-content"> 
                     <a href="../subpages/cv.html">Resume</a>
                 </div>
             </div>
-            <div class="dropdown"> Hobbies 
+            <div class="dropdown hobbies-width"> Hobbies 
                 <div class="dropdown-content"> 
                     <a href="../subpages/nutrition.html">Nutrition</a>
                     <a href="../subpages/sport.html">Sport</a>
@@ -34,17 +59,104 @@
             <a href="../subpages/shop.html">Shop</a>
         </nav>
     </header>
-    <main>
+    <main class="main-blog main-bg-shop">
+      <h1> Pick <span class="highlight">your</span> site </h1>
+      <div class="content-paper">
+        <div class="article-body"> 
+          <section class="article-content">
+            <h2> Welcome to my garage ! </h2>
+            <div class="gallery-container">
+              <div class="gallery-item">
+                <a href="https://www.wix.com/">
+                  <img src="../images/site-1.jpg" alt="site-1">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="https://www.takeaway.com/ro">
+                  <img src="../images/site-2.jpg" alt="site-2">
+                </a>  
+              </div>
+              <div class="gallery-item">
+                <a href="https://www.hackthebox.eu">
+                  <img src="../images/site-3.jpg" alt="site-3">
+                </a>  
+              </div>
+              <div class="gallery-item">
+                <a href="https://www.airbnb.com">
+                  <img src="../images/site-4.jpg" alt="site-4">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="https://www.fiverr.com">
+                  <img src="../images/site-5.jpg" alt="site-5">
+                </a>
+              </div>
+              <div class="gallery-item">
+                <a href="https://www.tumblr.com/">
+                  <img src="../images/site-6.jpg" alt="site-6">
+                </a>
+              </div>
+            </div>
+            <table>
+              <caption>Here are the facilities for standard pack:</caption>
+              <thead>
+                <th>🎨 Graphics &amp; Design </th>
+                <th>📝 Content develop </th>
+                <th>🔒 Security &amp; Host </th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Special design for your business theme</td>
+                  <td>3 Pages of medium complexity</td>
+                  <td>Security certificate valid for 12 months</td>
+                </tr>
+                <tr>
+                  <td>Responsive mobile structure</td>
+                  <td>Slideshow, contact form</td>
+                  <td>Free host 12 months</td>
+                </tr>
+                <tr>
+                  <td>3 Demo designs</td>
+                  <td>Google Maps embeded</td>
+                  <td>GDPR implementation</td>
+                </tr>
+                <tr>
+                  <td>Intuitive management panel </td>
+                  <td>SEO optimization 1-3 words</td>
+                  <td>12 Months warranty</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3" style="text-align: center;"> Price for this pack : <span style="text-decoration: underline lightseagreen;">750</span><span style="color: lightseagreen">$</span></td>
+                </tr>
+              </tfoot>
+            </table>
+          </section>
+        </div>
+        <nav class="nav-articles nav-border-color-shop">
+                <div class="nav-articles-title-shop">Scroll through</div>
+                <a href="">Intro</a>
+                <div class="dropdown-blog" tabindex="3">Basics
+                    <div class="dropdown-content-blog">
+                        <a>Subpage.1</a>
+                        <a>Subpage.2</a>
+                        <a>Subpage.3</a>
+                    </div>
+                </div>
+            </nav>
+      </div>
     </main>
     <footer>
         <div class="social-media">
             <a class="fa fa-facebook" href="https://www.facebook.com/adrian.adam.161" target="_blank"></a>
-            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/adam-a-a59b85133" target="_blank"></a>
+            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/adrian-claudiu-a-a59b85133/" target="_blank"></a>
             <a class="fa fa-instagram" href="https://www.instagram.com/adrian.adam.c/" target="_blank"></a>
         </div>
         <div class="copy-right">
             Copyright © 2020 Adam Adrian-Claudiu
         </div>
     </footer>
+    <script src="../scripts/main-script.js"></script>
 </body>
 </html>

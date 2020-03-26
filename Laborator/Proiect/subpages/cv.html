@@ -17,14 +17,37 @@
 <body>
     <header>
         <a class="logo">Adam Adrian.</a>
-        <nav>
+        <nav class="sidenav">
+            <div class="nav-mobile" onclick="menuState(this)">
+              <div class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+            <a href="../index.html"> Home </a>
+            <div class="dropdown" onclick="selectDiv(this)"> My Formal 
+                <div class="dropdown-content"> 
+                    <a href="../subpages/cv.html">Resume</a>
+                </div>
+            </div>
+            <div class="dropdown" onclick="selectDiv(this)"> Hobbies 
+                <div class="dropdown-content"> 
+                    <a href="../subpages/nutrition.html">Nutrition</a>
+                    <a href="../subpages/sport.html">Sport</a>
+                    <a href="../subpages/programming.html">Programming</a>
+                </div>
+            </div>
+            <a href="../subpages/shop.html">Shop</a>
+        </nav> 
+        <nav class="largeScreen">
             <a href="../index.html"> Home </a>
             <div class="dropdown"> My Formal 
                 <div class="dropdown-content"> 
                     <a href="../subpages/cv.html">Resume</a>
                 </div>
             </div>
-            <div class="dropdown"> Hobbies 
+            <div class="dropdown hobbies-width"> Hobbies 
                 <div class="dropdown-content"> 
                     <a href="../subpages/nutrition.html">Nutrition</a>
                     <a href="../subpages/sport.html">Sport</a>
@@ -125,12 +148,12 @@
                         <div class="grid-container-c2">
                             <div class="grid-an">2019 - present</div>
                             <div class="grid-title">University of Bucharest<br>Faculty of mathematics and computer science</div>
-                            <div class="grid-description" style="grid-area: 2/2/2/2;">Field: Computer Science <br> City: Bucharest</div>
+                            <div class="grid-description">Field: Computer Science <br> City: Bucharest</div>
                         </div>
                         <div class="grid-container-c2">
                             <div class="grid-an">2015 - 2019</div>
                             <div class="grid-title">National College "Mihail Kogalniceanu"</div>
-                            <div class="grid-description" style="grid-area: 2/2/2/2;">Field: Mathematics and informatics intensive <br> City: Galati</div>
+                            <div class="grid-description">Field: Mathematics and informatics intensive <br> City: Galati</div>
                         </div>
                     </div>
                 </div>
@@ -143,17 +166,17 @@
                         <div class="grid-container-c2">
                             <div class="grid-an">2019 - present</div>
                             <div class="grid-title">Volunteering<br>Member of the students' association in mathematics and computer science<br></div>
-                            <div class="grid-description" style="grid-area: 2/2/2/2;">Department: Projects <br> City: Bucharest</div>
+                            <div class="grid-description">Department: Projects <br> City: Bucharest</div>
                         </div>
                         <div class="grid-container-c2">
                             <div class="grid-an">2018</div>
                             <div class="grid-title">Internship<br>Selir SC</div>
-                            <div class="grid-description" style="grid-area: 2/2/2/2;">Web developer: HTML, CSS, JS, SQL, PHP, Jquery <br> City: Galati</div>
+                            <div class="grid-description">Web developer: HTML, CSS, JS, SQL, PHP, Jquery <br> City: Galati</div>
                         </div>
                         <div class="grid-container-c2">
                             <div class="grid-an">2017</div>
                             <div class="grid-title">Internship<br>Selir SC</div>
-                            <div class="grid-description" style="grid-area: 2/2/2/2;">Web developer: HTML, CSS, JS, SQL, PHP <br> City: Galati</div>
+                            <div class="grid-description">Web developer: HTML, CSS, JS, SQL, PHP <br> City: Galati</div>
                         </div>
                     </div>
                 </div>
@@ -163,7 +186,7 @@
                         <rect width="50" height="10" style="fill:#4577bf;stroke-width:3;stroke:rgb(0,0,0)" /> 
                     </svg>
                     <div class="chapter-content">
-                        <div class="grid-container-c2">
+                        <div class="grid-container-c3">
                             <div class="chapter-box">
                                 <div class="chapter-box-title">• County Olympiad of Informatics</div>
                                 <div class="chapter-box-grid">
@@ -227,13 +250,14 @@
     <footer>
         <div class="social-media">
             <a class="fa fa-facebook" href="https://www.facebook.com/adrian.adam.161" target="_blank"></a>
-            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/adam-a-a59b85133" target="_blank"></a>
+            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/adrian-claudiu-a-a59b85133/" target="_blank"></a>
             <a class="fa fa-instagram" href="https://www.instagram.com/adrian.adam.c/" target="_blank"></a>
         </div>
         <div class="copy-right">
             Copyright © 2020 Adam Adrian-Claudiu
         </div>
     </footer>
+    <script src="../scripts/main-script.js"></script>
 </body>
 
 </html>

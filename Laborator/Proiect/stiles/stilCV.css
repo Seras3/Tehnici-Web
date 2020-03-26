@@ -10,12 +10,12 @@ header{
     font-family: 'Roboto';
 
 }
-
+    
 .col1{
     background-color: #2A466E;
     flex-direction: column;
     flex-grow: 1;
-    max-width: 400px;
+    max-width: 25rem;
     color: white;
     padding-top: 5%;
 }
@@ -29,7 +29,8 @@ header{
 
 .border-line{
     background: linear-gradient(to right, #2A466E, #002250);
-    flex-grow: 0.15;
+    flex-shrink: 0;
+    flex-basis: 2%;
 }
 
 .col2{
@@ -44,14 +45,14 @@ body{
 }
 
 .name {
-    font-size: 25px;
+    font-size: 1.56rem;
     text-align: center;
 }
 
 .actual-profession{
-    padding-top: 5px;
-    padding-bottom: 20px;
-    font-size: 15px;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    font-size: 1rem;
     text-align: center;
     opacity: 50%;
     font-family: "Roboto Light";
@@ -59,30 +60,30 @@ body{
 
 .info-box{
     border: 1px solid white;
-    border-radius: 25px;
-    padding: 15px;
-    font-size: 18px;
+    border-radius: 1.56rem;
+    padding: 5%;
+    font-size: 1.125rem;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .ability-panel{
-    margin-top: 50px;
+    margin-top: 20%;
 }
 
 .ability-head{
-    font-size: 27px;
-    padding-left: 15px;
+    font-size: 1.6875rem;
+    padding-left: 4%;
 }
 
 .ability-list-1 > li{
     list-style: none;
-    font-size: 18px;
-    padding: 10px;
-    margin: 5px;
+    font-size: 1.125rem;
+    padding: 2.6%;
+    margin: 2%;
     display: inline-flex;
     border-right: 2px solid white;
     border-radius: 20px;
@@ -91,9 +92,9 @@ body{
 
 .ability-list-2 > li{
     list-style: none;
-    font-size: 18px;
-    padding: 10px;
-    margin: 3px;
+    font-size: 1.125rem;
+    padding: 3%;
+    margin: 2%;
     display: inline-flex;
     border-right: 2px solid white;
     border-radius: 20px;
@@ -101,92 +102,160 @@ body{
 }
 
 .ability-list-3 > li{
-    font-size: 18px;
-    margin: 3px;
+    font-size: 1.125rem;
+    margin: 1.2%;
     display: inline-flex;
 
 }
 
 .ability-list-3 > li:before{
     content: "|";
-    padding-right: 8px;
+    padding-right: 6%;
 }
 
 ul{
-    margin-top: 30px;
-    padding-inline-start: 5px;
+    margin-top: 10%;
+    padding-left: 0;
     font-family: "Roboto Light";
 }
 
 .grid-container-c1{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 5px;
-    margin-top: 30px;
-    margin-left: 5px;
+    grid-template-columns: 70% 20%;
+    grid-column-gap: 10%;
+    grid-row-gap: 0.5rem;
+    margin-top: 10%;
+    margin-left: 2%;
 }
 .grid-container-c2{
     display: grid;
-    grid-template-columns: 400px auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 5px;
-    margin-top: 30px;
-    margin-left: 5px;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+    grid-row-gap: 0.5rem;
+    margin-top: 4%;
+    margin-left: 1%;
+}
+
+.grid-container-c2 .grid-description{
+    grid-area: 2/2/2/2;
+}
+
+.grid-container-c3{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 10%;
+    grid-row-gap: 0.5rem;
+    margin-top: 4%;
+    margin-left: 1%;
 }
 
 .grid-title{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Roboto";
 }
 
 .grid-an{
-    padding: 5px; 
-    font-size: 20px;
+    padding: 1%; 
+    font-size: 1.25rem;
     font-family: "Roboto";
 }
 
 .grid-description{
-    font-size: 15px;
+    font-size: 1rem;
     font-family: "Roboto Light";
 }
 
 .chapter{
-    margin: 40px;
+    margin: 2.5rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: outset 0px goldenrod;
+    transition: transform 1s, box-shadow 1s, border .5s;
+}
+
+.chapter:hover {
+    transition: transform 1s, box-shadow 1s, border .5s .2s;
+    transform: translateX(-10px) translateY(-10px);
+    border: outset 1px gold;
+    box-shadow: 10px 10px 20px gold;
 }
 
 .chapter-title{
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #4577bf;
     font-family: "Roboto Medium";
 }
 
 .chapter-content{
     color: #5579ad;
-    margin-top: 20px;
     max-width: 800px;
     font-family: "Roboto Light";
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .chapter-box{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .chapter-box-title{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Roboto";
-    margin-top: 10px;
+    margin-top: 3%;
 }
 
 .chapter-box-grid{
     display: grid;
-    grid-template-columns: 300px auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 5px;
-    margin-top: 10px;
-    margin-left: 5px;
-    font-size: 18px;
+    grid-template-columns: 80% 20%;
+    grid-column-gap: 2%;
+    grid-row-gap: 0.2rem;
+    margin-top: 3%;
+    margin-left: 1.5%;
+    font-size: 1.125rem;
     font-family: "Roboto Light";
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+    
+  .col1 {
+    max-width: none;
+  }
+    
+  .border-line {
+    background: linear-gradient(#2A466E, #002250);
+    flex-shrink: 0;
+    flex-basis: 6rem;
+    flex-grow: 2;
+  }
+  
+  .grid-container-c2 .grid-an {
+    grid-area: 2/1/2/1;
+  }
+  
+  .grid-container-c2 .grid-description {
+    grid-area: 3/1/3/1;
+  }
+  
+  .grid-container-c2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 0.5rem;
+    margin-bottom: 10%;
+    margin-top: 4%;
+    margin-left: 1%;
+  }
+  
+  .grid-container-c3{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 0.5rem;
+    margin-top: 4%;
+    margin-left: 1%;
+  }
+  
+    
+    
 }

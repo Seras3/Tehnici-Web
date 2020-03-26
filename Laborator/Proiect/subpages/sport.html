@@ -18,14 +18,37 @@
 <body>
     <header>
         <a class="logo">Adam Adrian.</a>
-        <nav>
+        <nav class="sidenav">
+            <div class="nav-mobile" onclick="menuState(this)">
+              <div class="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+            <a href="../index.html"> Home </a>
+            <div class="dropdown" onclick="selectDiv(this)"> My Formal 
+                <div class="dropdown-content"> 
+                    <a href="../subpages/cv.html">Resume</a>
+                </div>
+            </div>
+            <div class="dropdown" onclick="selectDiv(this)"> Hobbies 
+                <div class="dropdown-content"> 
+                    <a href="../subpages/nutrition.html">Nutrition</a>
+                    <a href="../subpages/sport.html">Sport</a>
+                    <a href="../subpages/programming.html">Programming</a>
+                </div>
+            </div>
+            <a href="../subpages/shop.html">Shop</a>
+        </nav>   
+        <nav class="largeScreen">
             <a href="../index.html"> Home </a>
             <div class="dropdown"> My Formal  
                 <div class="dropdown-content"> 
                     <a href="../subpages/cv.html">Resume</a>
                 </div>
             </div>
-            <div class="dropdown"> Hobbies 
+            <div class="dropdown hobbies-width"> Hobbies 
                 <div class="dropdown-content"> 
                     <a href="../subpages/nutrition.html">Nutrition</a>
                     <a href="../subpages/sport.html">Sport</a>
@@ -41,8 +64,8 @@
             <div class="article-body"> 
                 <section class="article-content">
                     <h2>Say hello to sport area!</h2>
-                    <img class="blog-img" src="../images/sport-intro-1.jpg" style="width: 50%;" alt="athlet">
                     <p>First of all, I am really glad you came to this page. Congratulations! This means that you care about your health condition. Before you will run into my articles, you should know who I am and why you should trust my words.</p> 
+                    <img class="blog-img" src="../images/sport-intro-1.jpg" alt="athlet">
                     <p>My name is Adam Adrian-Claudiu and I've been practiced sport all my life till now. At the age of 3 I felt in love with football and one year after I joined into FC Otelul Galati team, the best football club in my city ( at that time ). All those trainings formed my lifestyle and my passion at the same time. After 11 years, I got injured very bad during a match and that forced me to decide between a football career and further studies. I felt like I can't maximize my potential in this field, so I picked the way that ensure my future.
                     </p>
                     <p>Right after first week, my body pushed me to this habbit. My blood wants to move and to feel the fresh air again. So that's why I started this adventure: 4 years of workouts from scratch. I let you to discover the story behind my evolution and apply these hints on your way.
@@ -66,12 +89,13 @@
     <footer>
         <div class="social-media">
             <a class="fa fa-facebook" href="https://www.facebook.com/adrian.adam.161" target="_blank"></a>
-            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/adam-a-a59b85133" target="_blank"></a>
+            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/adrian-claudiu-a-a59b85133/" target="_blank"></a>
             <a class="fa fa-instagram" href="https://www.instagram.com/adrian.adam.c/" target="_blank"></a>
         </div>
         <div class="copy-right">
             Copyright © 2020 Adam Adrian-Claudiu
         </div>
     </footer>
+    <script src="../scripts/main-script.js"></script>
 </body>
 </html>
