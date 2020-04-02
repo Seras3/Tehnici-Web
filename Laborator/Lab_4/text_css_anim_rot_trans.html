@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+  #fereastra {
+    display: block;
+    position: relative;
+    width: 500px;
+    height: 250px;
+    background-color: black;
+    border-style: inset;
+    border-width: 7px;
+    border-color: brown;
+    animation: fereastra;
+    animation-duration: 5s;
+    overflow: hidden;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  } 
+  #soare{
+    background: red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    animation: soare-culoare, soare-rotatie;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes fereastra {
+    25% { background-color: navy; }
+    100% { background-color: lightblue;}
+  }
+  
+  @keyframes soare-culoare {
+    50% { background-color: yellow;}
+    100% { background-color: red;}
+  }
+  
+  @keyframes soare-pozitie {
+    from { left: -50px;}
+    to { left: 450px;}
+  }
+  
+  @keyframes soare-rotatie {
+    100% { transform: rotate(180deg); transform-origin: 300px 50px;}
+  }
+</style>  
+</head>
+<body>
+
+<div id="fereastra">
+<div id="soare"></div>
+</div>
+
+</body>
+</html>
+

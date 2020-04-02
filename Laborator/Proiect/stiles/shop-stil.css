@@ -52,10 +52,11 @@ tfoot {
 
 .gallery-item {
   position: relative;
-  display: inline-block;
   padding-left: 50%;
+  width: 100px;
   height: 200px;
   overflow: hidden;
+  display: block;
 }
 
 .gallery-item img {
@@ -77,18 +78,19 @@ tfoot {
 
 @media only screen and (max-width: 950px) {
   .gallery-container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .gallery-container {
-    display: grid;
     grid-template-columns: 1fr;
+    grid-row-gap: 0;
+    
   }
   
   .gallery-item {
     width: 100%;
+    height: 80vw;
   }
 }
